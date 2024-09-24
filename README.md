@@ -11,9 +11,13 @@ Dataset
 The dataset used in this project is medical_examination.csv, which contains the following columns:
 
 Age: age (in days)
+
 Height: height (in cm)
+
 Weight: weight (in kg)
+
 Gender: categorical code (1 for male, 2 for female)
+
 Systolic blood pressure: ap_hi (int)
 Diastolic blood pressure: ap_lo (int)
 Cholesterol: cholesterol (1: normal, 2: above normal, 3: well above normal)
@@ -26,14 +30,14 @@ Tasks
 
 The following tasks were completed in this project:
 
-Add an Overweight Column:
+1. Add an Overweight Column:
 
-Calculated the BMI (weight divided by height squared) and determined if a person is overweight (BMI > 25).
-Added a column overweight with values 0 (not overweight) and 1 (overweight).
-Normalize Data:
-
-Normalized the cholesterol and gluc columns so that 0 is always good and 1 is always bad.
-Create a Categorical Plot:
+  - Calculated the BMI (weight divided by height squared) and determined if a person is overweight (BMI > 25).
+  - Added a column overweight with values 0 (not overweight) and 1 (overweight).
+  
+2. Normalize Data:
+    - Normalized the cholesterol and gluc columns so that 0 is always good and 1 is always bad.
+    - Create a Categorical Plot:
 
 Converted the data into long format.
 Created a chart using seaborn's catplot() to show counts of good and bad outcomes for cholesterol, glucose, alcohol intake, physical activity, and smoking, split by the presence or absence of cardiovascular disease.
